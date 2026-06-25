@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Template - Inspired by hackyourway.cz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design_tokens.css">
+    <style>
+        /* Addition of basic structural helper classes */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        section { padding: 4rem 0; }
+        .hero { min-height: 80vh; display: flex; align-items: center; background: radial-gradient(circle at center, #111 0%, #000 100%); }
+    </style>
+</head>
+<body>
+
+    <header class="glass-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
+            <div class="logo" style="font-weight: 800; font-size: 1.5rem;">LOGO</div>
+            <nav style="display: flex; gap: 2rem;">
+                <a href="#" style="color: white; text-decoration: none;">Harmonogram</a>
+                <a href="#" style="color: white; text-decoration: none;">Přednášky</a>
+                <a href="#" style="color: white; text-decoration: none;">FAQ</a>
+            </nav>
+            <a href="#" class="btn-primary">Koupit vstupenky</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="heading-hero">HACK YOUR<br><span style="color: var(--color-primary);">WAY</span></h1>
+                <p style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 600px; margin-top: 1rem;">
+                    Konference pro ty, kteří nehledají dokonalost, ale výsledky.
+                </p>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <a href="#" class="btn-primary">Koupit vstupenky</a>
+                    <a href="#" style="color: white; border: 1px solid white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: var(--radius-button);">Prozkoumat lineup</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mindset">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Mindset Block 1 -->
+                    <div style="border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 0.5rem;">
+                        <h2 style="color: var(--color-primary);">DONE > PERFECT</h2>
+                        <para>Získejte mindset orientovaný na rychlé dodávání a reálné dopady.</para>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="border-top: 1px solid rgba(255,255,255,0.1); padding: 4rem 0;">
+        <div class="container">
+            <p>&copy; 2026 MENTORING WEB template</p>
+        </div>
+    </footer>
+
+</body>
+</html>

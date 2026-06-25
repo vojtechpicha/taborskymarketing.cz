@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* Glassmorphism Header (Hack Your Way style) */
+    .glass-header {
+        background: rgba(12, 14, 22, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        @apply border-b border-white border-opacity-5;
+    }
+
+    /* Primary Button (Recberry style) */
+    .btn-primary {
+        background-image: linear-gradient(135deg, #d4af37 0%, #f5d76e 50%, #d4af37 100%);
+        @apply text-[#0c0e16] px-8 py-4 rounded-xl font-bold uppercase tracking-widest shadow-gold-glow transition-all duration-200 inline-block text-center;
+    }
+
+    .btn-primary:hover {
+        @apply -translate-y-0.5 shadow-gold-glow-hover;
+    }
+
+    /* Secondary Button (Outline Recberry style) */
+    .btn-secondary {
+        @apply border border-white border-opacity-20 text-white text-opacity-80 px-8 py-4 rounded-xl font-semibold transition-all duration-200 inline-block text-center;
+    }
+
+    .btn-secondary:hover {
+        @apply text-white border-gold bg-gold bg-opacity-5;
+    }
+
+    /* Glowing Box for "About Me" */
+    .glow-box {
+        @apply bg-surface border border-gold border-opacity-20 rounded-2xl shadow-xl relative overflow-hidden;
+        box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.05), 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .glow-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        opacity: 0.5;
+    }
+
+    /* Typography Utilities */
+    .text-gradient-gold {
+        background: linear-gradient(135deg, #d4af37 0%, #f5d76e 50%, #d4af37 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* Modal specific styles */
+    .modal {
+        @apply hidden fixed inset-0 z-[100] overflow-auto bg-black bg-opacity-80 backdrop-blur-[5px] items-center justify-center;
+    }
+
+    .modal.flex {
+        display: flex;
+    }
+}
+
+@layer utilities {
+    .carousel-container {
+        @apply flex w-max;
+    }
+
+    .carousel-card {
+        @apply w-[85vw] md:w-[400px];
+    }
+}

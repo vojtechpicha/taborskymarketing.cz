@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podmínky ochrany osobních údajů | Vojtěch Pícha</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: '#D4AF37',
+                        background: '#0a0c12',
+                        surface: '#11131a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0c12;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF5C3 0%, #D4AF37 50%, #AA8C2C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .glass-header {
+            background: rgba(10, 12, 18, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .content-box a {
+            color: #D4AF37;
+            text-decoration: underline;
+            text-decoration-color: rgba(212, 175, 55, 0.4);
+            text-underline-offset: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .content-box a:hover {
+            text-decoration-color: #D4AF37;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-white selection:bg-gold selection:text-background">
+
+    <!-- Header -->
+    <header class="glass-header fixed top-0 w-full z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html"
+                class="font-extrabold tracking-tighter flex flex-col justify-end text-left hover:opacity-80 transition-opacity">
+                <div class="text-xl md:text-2xl leading-none"><span class="text-gold">V</span>OJTĚCH <span
+                        class="text-gold">P</span>ÍCHA</div>
+                <div class="text-xs md:text-sm text-gray-400 leading-none tracking-[0.25em] uppercase -mt-0.5"
+                    style="margin-left: 0.1em;">
+                    MENTOR<span class="text-gold">.</span></div>
+            </a>
+            <div class="flex items-center">
+                <a href="index.html"
+                    class="text-sm font-medium text-gray-300 hover:text-gold transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Zpět na hlavní web
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <div
+                    class="inline-block mb-4 px-3 py-1 border border-gray-800 rounded-full bg-surface text-gray-400 text-xs font-bold tracking-wider uppercase">
+                    Právní dokument
+                </div>
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-snug"><span class="block mb-2">Podmínky
+                        ochrany</span><span class="text-gradient-gold block pb-2">osobních údajů</span></h1>
+                <p class="text-gray-400">Platné od únor 2026</p>
+            </div>
+
+            <div
+                class="bg-surface p-8 md:p-12 rounded-3xl border border-gray-800 shadow-xl content-box text-gray-300 space-y-8 leading-relaxed">
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">1. Základní ustanovení</h2>
+                    <p>Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o
+                        ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto
+                        údajů (dále jen: „GDPR”) je:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li><strong>Jméno a příjmení:</strong> Ing. Vojtěch Pícha</li>
+                        <li><strong>IČO:</strong> 21165629</li>
+                        <li><strong>Adresa:</strong> CUT, Vančurova 2904, 390 01 Tábor</li>
+                    </ul>
+                    <p class="mt-3">Kontaktní údaje správce jsou:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li><strong>Email:</strong> <a href="mailto:vpicha15@gmail.com">vpicha15@gmail.com</a></li>
+                        <li><strong>Telefon:</strong> <a href="tel:+420728586417">+420 728 586 417</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">2. Jaké údaje zpracovávám a proč?</h2>
+                    <p>Zpracovávám pouze osobní údaje, které mi sami poskytnete prostřednictvím webových formulářů
+                        (např. kontaktní formulář, poptávka služeb, přihlášení do waiting listu nebo žádost o video).
+                        Jde především o:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li>Jméno a příjmení, e-mailovou adresu a telefonní číslo</li>
+                        <li>Věk nebo životní status (student, pracující atd.) – pro přesnější nabídku mentoringu a
+                            přizpůsobení balíčku</li>
+                        <li>Obsah vašich zpráv a dotazů</li>
+                    </ul>
+                    <p class="mt-4">Tyto údaje zpracovávám výhradně za účelem:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li>Vyřízení vaší poptávky, dotazu nebo rezervace konzultace (plnění smlouvy nebo provedení
+                            opatření před uzavřením smlouvy)</li>
+                        <li>Zaslání informací o připravovaných kurzech (na základě vašeho souhlasu vyjádřeného vyplněním
+                            waiting listu)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">3. Kdo další má k údajům přístup?</h2>
+                    <p>Abych vám mohl své služby poskytovat efektivně, využívám prověřené nástroje třetích stran, které
+                        osobní údaje v některých fázích technicky zpracovávají v mé režii. Patří sem:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li>Poskytovatelé cloudových a databázových služeb (např. systém Supabase, přes který se
+                            ukládají poptávkové formuláře)</li>
+                        <li>Poskytovatelé webhostingu</li>
+                    </ul>
+                    <p class="mt-3">S těmito zpracovateli mám nastavené podmínky zaručující bezpečnost vašich dat a
+                        osobní údaje zásadně neprodávám ani nesdílím se třetími stranami za účelem marketingu.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">4. Jak dlouho údaje uchovávám?</h2>
+                    <p>Vaše osobní údaje uchovávám po dobu nezbytně nutnou k výkonu práv a povinností vyplývajících ze
+                        smluvního vztahu mezi námi a případně po dobu stanovenou příslušnými zákony (např. archivační
+                        povinnosti). V případě waiting listů pro kurzy uchovávám údaje (e-mail) pro zaslání jednorázové
+                        informace o spuštění, poté budou odstraněny, ledaže vyjádříte další souhlas nebo s vámi vstoupím
+                        do jiného obchodního vztahu.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">5. Jaká jsou vaše práva?</h2>
+                    <p>V souvislosti se zpracováním osobních údajů máte podle GDPR právo:</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-1 text-gray-400">
+                        <li>Na přístup ke svým osobním údajům</li>
+                        <li>Na opravu nebo výmaz svých osobních údajů</li>
+                        <li>Na omezení zpracování</li>
+                        <li>Zneplatnit nebo odvolat souhlas se zpracováním písemně na e-mail <a
+                                href="mailto:vpicha15@gmail.com">vpicha15@gmail.com</a></li>
+                        <li>Podat stížnost u Úřadu pro ochranu osobních údajů v případě, že se domníváte, že bylo
+                            porušeno vaše právo na ochranu osobních údajů</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4">6. Bezpečnost dat</h2>
+                    <p>Prohlašuji, že jsem přijal veškerá vhodná technická a organizační opatření k zabezpečení osobních
+                        údajů elektronickou zabezpečenou formou. Přístup k datům mám výhradně já, případně oprávněné a
+                        smluvně vázané služby třetích stran.</p>
+                </section>
+
+                <div class="pt-8 border-t border-gray-800 text-sm text-gray-500 text-center">
+                    Tyto podmínky nabývají účinnosti dnem 1. 2. 2026.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0c12] border-t border-gray-800 py-8 relative z-10 w-full mt-auto">
+        <div
+            class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-sm text-gray-500">
+            <div class="mb-2">
+                &copy; 2026 by Ing. Vojtěch Pícha | MENTOR.
+            </div>
+            <div>
+                <a href="index.html" class="hover:text-gold transition-colors">Zpět na hlavní web</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

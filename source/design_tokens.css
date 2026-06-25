@@ -1,0 +1,61 @@
+/* Design Tokens - hackyourway.cz inspired */
+
+:root {
+  /* Colors */
+  --color-primary: #BAF122;
+  --color-background-deep: #000000;
+  --color-background-dark: #0A0A0A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D1D5DB;
+  
+  /* Fonts */
+  --font-family-main: 'Sora', sans-serif;
+  
+  /* Effects */
+  --glow-primary: 0 0 10px rgba(186, 241, 34, 0.4);
+  --glass-bg: rgba(0, 0, 0, 0.5);
+  --glass-blur: blur(12px);
+  
+  /* Spacing & Radii */
+  --radius-button: 0.375rem; /* rounded-md */
+}
+
+/* Base resets & styles */
+body {
+  background-color: var(--color-background-deep);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass-header {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-background-deep);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-button);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.heading-hero {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
