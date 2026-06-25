@@ -1397,40 +1397,22 @@
                                         <path
                                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                     </svg></a>
-                                <!-- Contact Toggle Button -->
-                                <button onclick="toggleContactForm()" aria-label="Napsat zprávu s dotazem"
+                                <!-- Email Link Button -->
+                                <a href="mailto:vpicha15@gmail.com" aria-label="Napsat e-mail s dotazem"
                                     class="w-12 h-12 rounded-full bg-surface border border-gray-800 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold/30 hover:-translate-y-1 transition-all shadow-lg hover:shadow-[0_0_15px_rgba(212,175,55,0.2)]"><svg
                                         class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                                         </path>
-                                    </svg></button>
-                                <button onclick="toggleContactForm()"
+                                    </svg></a>
+                                <a href="mailto:vpicha15@gmail.com"
                                     class="text-gray-300 font-medium hover:text-gold transition-colors focus:outline-none flex items-center group">Máš
                                     na mě dotaz? <svg
                                         class="w-4 h-4 ml-1 opacity-50 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7"></path>
-                                    </svg></button>
-                            </div>
-
-                            <!-- Collapsible Form -->
-                            <div id="quickContactForm"
-                                class="hidden mt-6 bg-surface p-6 rounded-2xl border border-gray-800 shadow-lg">
-                                <form id="contactForm" action="#" class="space-y-4 relative"><input type="email"
-                                        id="contactEmail" placeholder="Tvůj e-mail (abych ti mohl odepsat)"
-                                        class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm"
-                                        required><textarea id="contactMessage" placeholder="Sem napiš svůj dotaz..."
-                                        rows="3"
-                                        class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors resize-none text-sm"
-                                        required></textarea><button type="submit" id="contactSubmit"
-                                        class="btn-primary w-full !py-3 text-sm">Odeslat
-                                        dotaz přímo mně</button>
-                                    <div id="contactFeedback"
-                                        class="hidden text-center text-sm mt-3 font-medium text-gold">
-                                    </div>
-                                </form>
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
@@ -1790,67 +1772,32 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                         </path>
                     </svg></button>
-                <h3 class="text-2xl font-bold mb-2 text-white">Nezávazná
-                    poptávka</h3>
+                <h3 class="text-2xl font-bold mb-2 text-white">Mám zájem</h3>
                 <p id="modalPackageName" class="text-gold font-semibold mb-4 uppercase tracking-widest text-sm">
                 </p>
-                <!-- FOMO availability notice -->
                 <div id="modalAvailability"
                     class="hidden mb-5 px-4 py-3 rounded-xl border text-sm font-semibold text-center">
                 </div>
-                <form id="modalForm" action="#" method="POST" class="space-y-4"><input type="hidden" id="packageInput"
-                        name="package">
-                    <div><label class="block text-sm font-medium text-gray-400 mb-1">Jméno
-                            a příjmení *</label><input type="text" name="name"
-                            class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors"
-                            required></div>
-                    <div><label class="block text-sm font-medium text-gray-400 mb-1">Poptávám jako *</label><select
-                            name="inquirer_type"
-                            class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors appearance-none"
-                            required>
-                            <option value="" disabled selected>Vyberte...</option>
-                            <option value="student">Žák / Student</option>
-                            <option value="parent">Rodič</option>
-                        </select></div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div><label class="block text-sm font-medium text-gray-400 mb-1">Věk žáka/studenta *</label><input type="number"
-                                name="age"
-                                class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors"
-                                required min="10" max="99"></div>
-                        <div><label class="block text-sm font-medium text-gray-400 mb-1">Status žáka/studenta *</label><select
-                                name="status"
-                                class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors appearance-none"
-                                required>
-                                <option value="" disabled selected>
-                                    Vyberte...</option>
-                                <option value="zš">Student ZŠ</option>
-                                <option value="sš">Student SŠ</option>
-                                <option value="vš">Student VŠ</option>
-                                <option value="jiné">Jiné</option>
-                            </select></div>
+                <div class="space-y-4 text-center mt-6">
+                    <p class="text-gray-300 text-sm">Pro domluvení termínu nebo dotazy mě prosím kontaktujte přímo:</p>
+                    <div class="flex flex-col gap-3">
+                        <a id="modalEmailBtn" href="mailto:vpicha15@gmail.com" class="btn-primary w-full py-3 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Napsat e-mail
+                        </a>
+                        <a href="tel:+420728586417" class="btn-secondary w-full py-3 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            Zavolat: +420 728 586 417
+                        </a>
                     </div>
-                    <div><label class="block text-sm font-medium text-gray-400 mb-1">Kontaktní e-mail *</label><input type="email"
-                            name="email"
-                            class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors"
-                            required></div>
-                    <div><label class="block text-sm font-medium text-gray-400 mb-1">Kontaktní telefonní
-                            číslo *</label><input type="tel" name="phone" value="+420 "
-                            class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors"
-                            required pattern="^\+420\s?(\d\s?){9}$" title="Zadejte +420 a 9 číslic (např. +420 123 456 789)"></div>
-                    <div><label class="block text-sm font-medium text-gray-400 mb-1">Místo pro zprávu či konkrétní dotaz (volitelné)</label><textarea name="message"
-                            rows="3"
-                            class="w-full bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors resize-none text-sm"></textarea>
-                    </div><button type="submit" id="modalSubmit"
-                        class="btn-primary w-full mt-6">Odeslat
-                        poptávku</button>
-                    <div id="modalFeedback" class="hidden text-center text-sm font-medium mt-3 text-gold">
-                    </div>
-                    <p class="text-xs text-gray-500 text-center mt-3">Po
-                        odeslání tě budu kontaktovat e-mailem s dalším
-                        postupem.<br><span class="opacity-60 text-[10px]">Pole označená hvězdičkou (*) jsou povinná. <a
-                                href="ochrana-osobnich-udaju.html" class="underline hover:text-gold">Ochrana
-                                os. údajů</a></span></p>
-                </form>
+                    <p class="text-xs text-gray-500 mt-4">
+                        Odepisuji zpravidla do 24 hodin.
+                    </p>
+                </div>
             </div>
         </div>
         <script> // Audience Toggle Logic
@@ -1888,14 +1835,15 @@
 
             const modal = document.getElementById('orderModal');
             const pkgNameTarget = document.getElementById('modalPackageName');
-            const pkgInput = document.getElementById('packageInput');
             const modalContent = modal.querySelector('div');
-
             const modalAvailability = document.getElementById('modalAvailability');
+            const modalEmailBtn = document.getElementById('modalEmailBtn');
 
             function openModal(packageName) {
                 pkgNameTarget.textContent = packageName;
-                pkgInput.value = packageName;
+                if (modalEmailBtn) {
+                    modalEmailBtn.href = `mailto:vpicha15@gmail.com?subject=${encodeURIComponent('Zájem o konzultaci: ' + packageName)}`;
+                }
 
                 // Show FOMO notice based on package
                 if (packageName === 'Balíček 10 x 60 min') {
@@ -1939,19 +1887,6 @@
                 }
             }
 
-            // Quick Contact Form Toggle
-            function toggleContactForm() {
-                const form = document.getElementById('quickContactForm');
-
-                if (form.classList.contains('hidden')) {
-                    form.classList.remove('hidden');
-                }
-
-                else {
-                    form.classList.add('hidden');
-                }
-            }
-
         </script>
     </main>
     <!-- Kurzy & Waiting List -->
@@ -1992,16 +1927,13 @@
                             </ul>
                         </div>
                         <div class="mt-auto pt-4 border-t border-gray-800/50">
-                            <p class="text-xs text-gray-400 mb-3">Měl bys zájem o takový kurz? Zadej sem
-                                e-mail a já se ti ozvu.</p>
-                            <form id="course1Form" class="flex flex-col sm:flex-row gap-3 relative"><input type="email"
-                                    id="course1Email" placeholder="Tvůj e-mail pro waiting list"
-                                    class="flex-1 bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm transition-colors"
-                                    required><button type="submit" id="course1Submit"
-                                    class="btn-secondary !p-3 !text-sm whitespace-nowrap">Mám zájem</button>
-                            </form>
-                            <div id="course1Feedback" class="hidden text-center text-sm font-medium mt-3 text-gold">
-                            </div>
+                            <a href="mailto:vpicha15@gmail.com?subject=Zájem o kurz: Praktické využití AI"
+                                class="btn-primary w-full text-center py-3 text-sm flex items-center justify-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                Mám zájem o kurz
+                            </a>
                         </div>
                     </div>
                     <!-- Mobile Accordion Reveal Chevron -->
@@ -2051,17 +1983,13 @@
                             </ul>
                         </div>
                         <div class="mt-auto pt-4 border-t border-gray-800/50">
-                            <p class="text-xs text-gray-400 mb-3">Měl bys zájem o takový kurz? Zadej sem
-                                e-mail a já se ti ozvu.</p>
-                            <form id="course2Form" class="flex flex-col sm:flex-row gap-3 relative">
-                                <input type="email" id="course2Email" placeholder="Tvůj e-mail pro waiting list"
-                                    class="flex-1 bg-background border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold text-sm transition-colors"
-                                    required><button type="submit" id="course2Submit"
-                                    class="btn-secondary !p-3 !text-sm whitespace-nowrap">Mám
-                                    zájem</button>
-                            </form>
-                            <div id="course2Feedback" class="hidden text-center text-sm font-medium mt-3 text-gold">
-                            </div>
+                            <a href="mailto:vpicha15@gmail.com?subject=Zájem o kurz: Praktický dospělý život"
+                                class="btn-primary w-full text-center py-3 text-sm flex items-center justify-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                Mám zájem o kurz
+                            </a>
                         </div>
                     </div>
                     <!-- Mobile Accordion Reveal Chevron -->
@@ -2109,197 +2037,7 @@
             link.addEventListener('click', toggleMobileMenu);
         });
 
-        async function handleFormSubmit(e, formId, feedbackId, submitBtnId, payload) {
-            e.preventDefault();
 
-            const form = document.getElementById(formId);
-            const feedbackEl = document.getElementById(feedbackId);
-            const submitBtn = document.getElementById(submitBtnId);
-
-            const originalBtnText = submitBtn.textContent;
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Odesílám...";
-            feedbackEl.classList.add('hidden');
-
-            try {
-                const response = await fetch('/api/contact', {
-
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-
-                    ,
-                    body: JSON.stringify(payload),
-                });
-
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error || 'Chyba při odesílání.');
-                }
-
-                form.reset();
-
-                // Přemístit feedback mimo formulář, pokud je uvnitř (aby nezmizel s ním)
-                if (feedbackEl.parentElement === form) {
-                    form.parentNode.insertBefore(feedbackEl, form.nextSibling);
-                }
-
-                // Skrýt formulář
-                form.classList.add('hidden');
-
-                // Skrýt i doprovodné texty
-                if (formId === 'subscribeForm') {
-                    const descP = form.previousElementSibling;
-                    if (descP && descP.tagName === 'P') descP.classList.add('hidden');
-                    const titleH3 = descP ? descP.previousElementSibling : null;
-                    if (titleH3 && titleH3.tagName === 'H3') titleH3.classList.add('hidden');
-                    const spamP = feedbackEl.nextElementSibling;
-                    if (spamP && spamP.tagName === 'P') spamP.classList.add('hidden');
-                }
-
-                else if (formId === 'course1Form' || formId === 'course2Form') {
-                    const p = form.previousElementSibling;
-                    if (p && p.tagName === 'P') p.classList.add('hidden');
-                }
-
-                let successMsg = '';
-
-                if (formId === 'contactForm') {
-                    successMsg = '<strong class="text-2xl md:text-3xl text-gold block mb-2">Děkuji za tvůj dotaz.</strong><span class="text-lg md:text-xl font-normal text-gray-300 mt-2 block">Brzy se ti ozvu.</span>';
-                }
-
-                else if (formId === 'modalForm') {
-                    const studentMsg = "Brzy se ti ozvu do e-mailu, tak to čekuj.";
-                    const parentMsg = "Brzy se ozvu na zadaný e-mail s dalším postupem.";
-                    const msg = payload.person_type === 'parent' ? parentMsg : studentMsg;
-                    successMsg = `<strong class="text-2xl md:text-3xl text-gold block mb-2">Poptávka byla úspěšně odeslána.</strong><span class="text-lg md:text-xl font-normal text-gray-300 mt-2 block">${msg}</span>`;
-                }
-
-                else if (formId === 'course1Form' || formId === 'course2Form') {
-                    successMsg = '<strong class="text-lg md:text-xl text-gold block mb-1">Byl jsi úspěšně zařazen na waiting-list.</strong><span class="text-sm md:text-base font-normal text-gray-400 mt-1 block">Brzy se ti ozvu.</span>';
-                }
-
-                else if (formId === 'subscribeForm') {
-                    successMsg = '<strong class="text-2xl md:text-3xl text-gold block mb-2">Úspěšně odesláno!</strong><span class="text-lg md:text-xl font-normal text-gray-300 mt-2 block">Brzy se ti ozvu do e-mailu.</span>';
-                }
-
-                feedbackEl.innerHTML = successMsg;
-                feedbackEl.className = 'text-center mt-6 py-8';
-
-                if (formId === 'modalForm') {
-                    setTimeout(() => closeModal(), 5000);
-                }
-            }
-
-            catch (err) {
-                console.error('Submission error:', err);
-                feedbackEl.textContent = 'Něco se pokazilo. Zkus to prosím znovu.';
-                feedbackEl.className = 'text-center text-sm font-medium mt-3 text-red-500';
-            }
-
-            finally {
-                feedbackEl.classList.remove('hidden');
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalBtnText;
-            }
-        }
-
-        const subscribeForm = document.getElementById('subscribeForm');
-
-        if (subscribeForm) {
-            subscribeForm.addEventListener('submit', (e) => {
-                handleFormSubmit(e, 'subscribeForm', 'subscribeFeedback', 'subscribeSubmit', {
-                    name: document.getElementById('subscribeName').value,
-                    email: document.getElementById('subscribeEmail').value,
-                    type: 'zadost_video'
-                });
-            });
-        }
-
-        const contactForm = document.getElementById('contactForm');
-
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                handleFormSubmit(e, 'contactForm', 'contactFeedback', 'contactSubmit', {
-                    email: document.getElementById('contactEmail').value,
-                    message: document.getElementById('contactMessage').value,
-                    type: 'dotaz'
-                });
-            });
-        }
-
-        const course1Form = document.getElementById('course1Form');
-
-        if (course1Form) {
-            course1Form.addEventListener('submit', (e) => {
-                handleFormSubmit(e, 'course1Form', 'course1Feedback', 'course1Submit', {
-                    email: document.getElementById('course1Email').value,
-                    message: "Zájem o: Mindset kurz v době AI",
-                    type: 'waiting_list'
-                });
-            });
-        }
-
-        const course2Form = document.getElementById('course2Form');
-
-        if (course2Form) {
-            course2Form.addEventListener('submit', (e) => {
-                handleFormSubmit(e, 'course2Form', 'course2Feedback', 'course2Submit', {
-                    email: document.getElementById('course2Email').value,
-                    message: "Zájem o: Kurz pro praktický dospělý život",
-                    type: 'waiting_list'
-                });
-            });
-        }
-
-        const modalForm = document.getElementById('modalForm');
-
-        if (modalForm) {
-            modalForm.addEventListener('submit', (e) => {
-                const formData = new FormData(modalForm);
-
-                const phone = formData.get('phone') || "";
-                const phoneDigits = phone.replace(/\s/g, '').replace('+420', '');
-
-                if (phoneDigits.length !== 9) {
-                    const feedbackEl = document.getElementById('modalFeedback');
-                    feedbackEl.textContent = 'Telefonní číslo musí mít 9 číslic za předvolbou +420.';
-                    feedbackEl.className = 'text-center text-sm font-medium mt-3 text-red-500';
-                    feedbackEl.classList.remove('hidden');
-                    return;
-                }
-
-                handleFormSubmit(e, 'modalForm', 'modalFeedback', 'modalSubmit', {
-                    name: formData.get('name'),
-                    person_type: formData.get('inquirer_type'),
-                    age: parseInt(formData.get('age')) || null,
-                    status: formData.get('status'),
-                    email: formData.get('email'),
-                    phone: formData.get('phone'),
-                    message: "Zájem o balíček: " + formData.get('package'),
-                    poznamka: formData.get('message') || "",
-                    type: 'poptavka'
-                });
-            });
-
-            // Prevent deleting +420 prefix
-            const phoneInput = modalForm.querySelector('input[name="phone"]');
-            if (phoneInput) {
-                phoneInput.addEventListener('input', function (e) {
-                    if (!this.value.startsWith('+420 ')) {
-                        this.value = '+420 ';
-                    }
-                });
-
-                phoneInput.addEventListener('keydown', function (e) {
-                    // Prevent backspacing into the prefix
-                    if ((e.key === 'Backspace' || e.key === 'Delete') && this.selectionStart <= 5) {
-                        e.preventDefault();
-                    }
-                });
-            }
-        }
 
         // --- Review Carousel Logic ---
         const reviewContainer = document.getElementById('reviewContainer');
