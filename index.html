@@ -20,7 +20,7 @@
     <meta name="description"
         content="Ekonomický a marketingový konzultant pro malé a střední firmy. Pomáhám firmám identifikovat potenciál, nastavit strategii a dlouhodobě růst. Konzultace v Táboře i online.">
     <meta name="keywords"
-        content="marketing konzultant, ekonomický poradce, byznys strategie, marketingové poradenství Tábor, growth strategie, firemní konzultace, malé a střední firmy, taborskymarketing">
+        content="marketing konzultant, ekonomický poradce, firemní strategie, marketingové poradenství Tábor, podnikatelská strategie, firemní konzultace, malé a střední firmy, taborskymarketing">
     <link rel="canonical" href="https://www.taborskymarketing.cz/">
     <meta name="robots" content="index, follow">
 
@@ -55,7 +55,19 @@
     "@type": "PostalAddress",
     "addressLocality": "Tábor",
     "addressCountry": "CZ"
-  }
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.4132,
+      "longitude": 14.6655
+    },
+    "geoRadius": "100000"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/vojt%C4%9Bch-p%C3%ADcha/"
+  ]
 }
 </script>
 
@@ -245,7 +257,7 @@
             </a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300"><a href="#proc-konzultace"
                     class="text-gold hover:text-white transition-colors">Proč konzultace</a><a href="#jak-to-probiha"
-                    class="hover:text-gold transition-colors">Co získte</a><a href="#muj-pribeh"
+                    class="hover:text-gold transition-colors">Co získáte</a><a href="#muj-pribeh"
                     class="hover:text-gold transition-colors">O mně</a><a href="#cenik"
                     class="hover:text-gold transition-colors">Ceník</a><a href="#kontakty"
                     class="hover:text-gold transition-colors">Kontakt</a></nav>
@@ -276,7 +288,7 @@
                     class="mobile-nav-link text-gold text-xl hover:text-white transition-colors font-medium uppercase tracking-widest">Proč
                     konzultace</a><a href="#jak-to-probiha"
                     class="mobile-nav-link text-white text-xl hover:text-gold transition-colors font-medium uppercase tracking-widest">Co
-                    získte</a><a href="#muj-pribeh"
+                    získáte</a><a href="#muj-pribeh"
                     class="mobile-nav-link text-white text-xl hover:text-gold transition-colors font-medium uppercase tracking-widest">O
                     mně</a><a href="#cenik"
                     class="mobile-nav-link text-white text-xl hover:text-gold transition-colors font-medium uppercase tracking-widest">Ceník</a><a
@@ -304,6 +316,7 @@
                             </div>
                             <!-- Profile Image with protection --><img src="source/Final_profile_picture.webp"
                                 alt="Vojtěch Pícha" draggable="false" fetchpriority="high"
+                                width="800" height="800"
                                 class="relative z-10 rounded-3xl shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700 w-full h-full object-cover border border-white/10 select-none">
                             <!-- Protective Overlay -->
                             <div class="absolute inset-0 z-20 rounded-3xl cursor-default" oncontextmenu="return false;">
@@ -980,7 +993,7 @@
                         <div class="mt-8 relative z-20 w-full text-center md:text-left">
                             <div class="flex items-center justify-center md:justify-start gap-4 flex-wrap w-full">
                                 <!-- LinkedIn Icon --><a href="https://www.linkedin.com/in/vojt%C4%9Bch-p%C3%ADcha/"
-                                    target="_blank" aria-label="Navštivte můj profil na LinkedIn"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Navštivte můj profil na LinkedIn"
                                     class="w-12 h-12 rounded-full bg-surface border border-gray-800 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold/30 hover:-translate-y-1 transition-all shadow-lg hover:shadow-[0_0_15px_rgba(212,175,55,0.2)]"><svg
                                         class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -1214,7 +1227,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                            </a><a href="https://www.linkedin.com/in/vojt%C4%9Bch-p%C3%ADcha/" target="_blank"
+                            </a><a href="https://www.linkedin.com/in/vojt%C4%9Bch-p%C3%ADcha/" target="_blank" rel="noopener noreferrer"
                                 class="flex items-center hover:text-gold transition-colors w-fit group"
                                 aria-label="Navštivte můj profil na LinkedIn" title="LinkedIn">
                                 <div
@@ -1255,7 +1268,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
         <!-- Pop-up Modal Form pro Ceník -->
@@ -1384,8 +1396,7 @@
             }
 
         </script>
-    </main>
-    <!-- Kurzy & Waiting List -->
+    <!-- Kurzy & Vzdělávání -->
     <section id="kurzy" class="py-16 lg:py-20 bg-[#0a0c12] border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -1485,6 +1496,7 @@
             </div>
         </div>
     </section>
+    </main>
     <!-- Footer -->
     <footer class="bg-[#0a0c12] border-t border-gray-800 py-8 relative z-10 w-full mt-auto">
         <div
@@ -1495,9 +1507,7 @@
                     class="hover:text-gold transition-colors">Podmínky ochrany osobních údajů</a></div>
         </div>
     </footer>
-    <!-- Supabase Implementation -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script> // Supabase Implementace a Mobilní Menu
+    <script> // Mobilní Menu a JS logika
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const closeMobileMenu = document.getElementById('closeMobileMenu');
         const mobileMenu = document.getElementById('mobileMenu');
