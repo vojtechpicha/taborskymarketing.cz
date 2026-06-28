@@ -353,24 +353,25 @@
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <!-- Audience toggle -->
-                    <div class="mt-12 sm:mt-12 flex justify-center px-4 mb-0">
+                    <div class="mt-12 sm:mt-12 flex flex-col items-center px-4 mb-0 gap-4">
+                        <p class="text-gray-400 text-sm font-medium tracking-wide">Co společně vyřešíme?</p>
                         <div id="audience-selector"
-                            class="flex w-full sm:inline-flex sm:w-auto p-1.5 bg-[#151828] border border-gray-800 rounded-full shadow-inner-lg overflow-hidden">
+                            class="inline-flex p-1.5 bg-[#151828] border border-gray-800 rounded-full shadow-inner-lg max-w-full overflow-hidden">
                             <button id="btn-student"
-                                class="flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-1.5 sm:gap-2 min-w-0"
+                                class="w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-2 whitespace-nowrap"
                                 onclick="setAudience('student')"><svg class="w-4 h-4 shrink-0" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                         d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6">
                                     </path>
-                                </svg><span>Stagnujete</span></button><button id="btn-rodic"
-                                class="flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-1.5 sm:gap-2 min-w-0"
+                                </svg><span>Stagnace</span></button><button id="btn-rodic"
+                                class="w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-2 whitespace-nowrap"
                                 onclick="setAudience('rodic')"><svg class="w-4 h-4 shrink-0" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                         d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
                                     </path>
-                                </svg><span>Chcete růst</span></button>
+                                </svg><span>Růst</span></button>
                         </div>
                     </div>
                     <!-- Spacer -->
@@ -1324,8 +1325,8 @@
                     panelRodic.classList.add('hidden');
 
                     // Update button states
-                    btnStudent.className = "flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-1.5 sm:gap-2 min-w-0";
-                    btnRodic.className = "flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-1.5 sm:gap-2 min-w-0";
+                    btnStudent.className = "w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-2 whitespace-nowrap";
+                    btnRodic.className = "w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-2 whitespace-nowrap";
                 }
 
                 else if (audience === 'rodic') {
@@ -1336,8 +1337,8 @@
                     panelStudent.classList.add('hidden');
 
                     // Update button states
-                    btnRodic.className = "flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-1.5 sm:gap-2 min-w-0";
-                    btnStudent.className = "flex-1 sm:flex-none sm:w-[220px] px-3 sm:px-10 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide sm:tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-1.5 sm:gap-2 min-w-0";
+                    btnRodic.className = "w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-gold-glow bg-gold-cta flex items-center justify-center gap-2 whitespace-nowrap";
+                    btnStudent.className = "w-[170px] sm:w-[220px] px-6 sm:px-10 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 text-white hover:text-gold flex items-center justify-center gap-2 whitespace-nowrap";
                 }
             }
 
