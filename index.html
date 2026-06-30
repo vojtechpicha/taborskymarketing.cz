@@ -302,7 +302,7 @@
         <section
             class="relative py-10 md:py-12 lg:pt-6 lg:pb-10 min-h-[600px] flex items-center justify-center overflow-hidden bg-background">
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 py-0 md:py-4 w-full">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid md:grid-cols-2 gap-12 items-stretch">
                     <!-- Left: Profile Photo -->
                     <div class="relative order-2 md:order-1">
                         <div class="aspect-square max-w-[420px] mx-auto relative group">
@@ -323,26 +323,23 @@
                         </div>
                     </div>
                     <!-- Right: Content -->
-                    <div class="text-center md:text-left order-1 md:order-2">
-                        <div
-                            class="inline-block mb-6 px-3 py-1 border border-gold/30 rounded-full bg-gold/5 text-gold text-[10px] md:text-sm font-bold tracking-widest uppercase">
-                            Ekonomický &amp; Marketingový konzultant</div>
-                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 leading-[1.1]">
-                            <span class="block mb-1 md:mb-2">Nastavím strategii. </span><span
-                                class="text-gradient-gold block pb-2">Navrhnu růst.</span>
-                        </h1>
-                        <div class="text-base md:text-xl text-gray-200 mb-8 font-light leading-relaxed">
+                    <div class="text-center md:text-left order-1 md:order-2 flex flex-col">
+                        <div class="text-xl md:text-2xl text-gray-200 font-light leading-relaxed">
                             <p>Jmenuji se Vojtěch Pícha a pomáhám firmám najít <span class="font-bold">skryté rezervy a překážky v rozvoji</span>. Nastavuji procesy, role, KPI a celý marketingový systém tak, aby fungoval <span class="font-bold">dlouhodobě a samostatně</span>.</p>
-                            <p class="mt-3">Spolupracuji s těmi, kteří chtějí hledat cesty k růstu.</p>
-                            <p class="mt-3">Na rovinu, na základě dat a s jasnou strategií — <span class="font-bold">bez obecných doporučení a zbytečných reportů</span>.</p>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"><a
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-auto pt-10 md:pt-0"><a
                                 href="#jak-to-probiha" class="btn-primary">NASTARTUJTE RŮST SVÉ FIRMY</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Separator quote strip -->
+        <div class="py-10 md:py-14 bg-[#1e1b12] border-y border-gold/10">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-xl md:text-2xl font-light italic text-gray-300">„Spolupracuji s těmi, kteří chtějí hledat cesty k růstu."</p>
+            </div>
+        </div>
         <!-- Block E: V čem vám to konkrétně pomůže -->
         <section id="proc-konzultace" class="py-16 lg:py-20 relative bg-[#0a0c12]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -662,7 +659,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto">
                     <!-- Header -->
-                    <div class="text-center mb-30">
+                    <div class="text-center mb-30 hidden">
                         <div
                             class="inline-block mb-4 px-4 py-1.5 border border-gold/40 rounded-full bg-gold/5 text-gold text-xs font-bold tracking-widest uppercase">
                             Přístup ke spolupráci</div>
@@ -678,16 +675,16 @@
                             class="absolute bottom-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -ml-32 -mb-32 pointer-events-none">
                         </div>
                         <!-- Top intro strip -->
-                        <div class="p-8 md:p-12 pb-8 relative z-10 text-center md:text-left">
+                        <div class="p-8 md:p-12 pb-8 relative z-10 text-center md:text-left hidden">
                             <p class="text-gray-300 text-lg leading-relaxed"><strong class="text-white">Celistvý přístup k firemní změně. Hodnota není v samostatné jednorázové konzultaci či auditu. <span class="text-gold">Audit je pouze první fází komplexní transformace</span> – ne report do šuplíku.</strong></p>
                         </div>
                         <!-- Gold divider -->
-                        <div class="h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent mx-8 md:mx-12">
+                        <div class="h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent mx-8 md:mx-12 hidden">
                         </div>
                         <!-- Main body grid -->
-                        <div class="grid md:grid-cols-2 gap-0 relative z-10">
+                        <div class="relative z-10">
                             <!-- Left: Questions Column -->
-                            <div class="md:border-r border-gold/10 flex flex-col">
+                            <div class="md:border-r border-gold/10 flex flex-col hidden">
                                 <!-- Section 1 -->
                                 <div
                                     class="p-4 md:p-6 border-b border-gold/10 mobile-card-toggle cursor-pointer md:cursor-default group/card">
@@ -803,7 +800,7 @@
             </div>
         </section>
         <!-- Block F: Recenze -->
-        <section id="recenze" class="py-16 lg:py-20 bg-background">
+        <section id="recenze" class="py-16 lg:py-20 bg-background hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center leading-snug">
                     <span class="block mb-2">Co říkají</span><span class="text-gradient-gold block pb-2">klienti a partneři</span>
@@ -934,7 +931,7 @@
                     </div>
         </section>
         <!-- Block C: O mně -->
-        <section id="muj-pribeh" class="py-16 lg:py-20 relative bg-[#0a0c12]">
+        <section id="muj-pribeh" class="py-16 lg:py-20 relative bg-[#0a0c12] hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
                     <div class="flex flex-col text-center md:text-left">
