@@ -324,10 +324,17 @@
                     </div>
                     <!-- Right: Content -->
                     <div class="text-center md:text-left order-1 md:order-2 flex flex-col">
-                        <div class="text-xl md:text-2xl text-gray-200 font-light leading-relaxed">
+                        <div
+                            class="inline-block mb-6 px-3 py-1 border border-gold/30 rounded-full bg-gold/5 text-gold text-[10px] md:text-sm font-bold tracking-widest uppercase">
+                            Ekonomický &amp; Marketingový konzultant</div>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
+                            <span class="block mb-1 md:mb-2">Nastavím strategii. </span><span
+                                class="text-gradient-gold block pb-2">Navrhnu růst.</span>
+                        </h1>
+                        <div class="text-base md:text-xl text-gray-200 font-light leading-relaxed">
                             <p>Jmenuji se Vojtěch Pícha a pomáhám firmám najít <span class="font-bold">skryté rezervy a překážky v rozvoji</span>. Nastavuji procesy, role, KPI a celý marketingový systém tak, aby fungoval <span class="font-bold">dlouhodobě a samostatně</span>.</p>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-auto pt-10 md:pt-0"><a
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-auto pt-8 md:pt-0"><a
                                 href="#jak-to-probiha" class="btn-primary">NASTARTUJTE RŮST SVÉ FIRMY</a>
                         </div>
                     </div>
@@ -742,49 +749,78 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Right: Features Column -->
-                            <div class="p-6 md:p-8 lg:p-10 bg-gold/[0.02]">
-                                <div>
-                                    <p
-                                        class="text-xs font-bold uppercase tracking-widest text-gold mb-6 text-center md:text-left">
-                                        Co zahrnuje spolupráce</p>
-                                    <ul class="space-y-5">
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">1</span><strong
-                                                class="text-white text-base">Hloubková firemní diagnostika</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">2</span><strong
-                                                class="text-white text-base">Marketingová a finanční analýza</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">3</span><strong
-                                                class="text-white text-base">Prioritizovaný plán změn</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">4</span><strong
-                                                class="text-white text-base">Stavba nebo optimalizace systémů</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">5</span><strong
-                                                class="text-white text-base">Průvodce při implementaci</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">6</span><strong
-                                                class="text-white text-base">Předání a vzdělávání týmu</strong>
-                                        </li>
-                                        <li class="flex gap-4 items-center">
-                                            <span
-                                                class="flex-shrink-0 w-8 h-8 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center text-gold text-sm font-extrabold">✦</span><strong
-                                                class="text-white text-base">Průběžný monitoring a konzultace</strong>
-                                        </li>
-                                    </ul>
+                            <!-- Right: Features Column (snake layout) -->
+                            <div class="p-6 md:p-10 lg:p-12">
+                                <p class="text-xs font-bold uppercase tracking-widest text-gold mb-10 text-center">
+                                    Co zahrnuje spolupráce</p>
+                                <div class="relative max-w-lg mx-auto">
+
+                                    <!-- Krok 1 — vlevo -->
+                                    <div class="flex items-center gap-5 py-4">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">1</span>
+                                        <strong class="text-white text-xl md:text-2xl">Hloubková firemní diagnostika</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vpravo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute right-0 top-0 bottom-0 w-1/2 border-r-2 border-b-2 border-gold/20 rounded-br-3xl"></div>
+                                    </div>
+
+                                    <!-- Krok 2 — vpravo -->
+                                    <div class="flex items-center gap-5 py-4 flex-row-reverse">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">2</span>
+                                        <strong class="text-white text-xl md:text-2xl text-right">Marketingová a finanční analýza</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vlevo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute left-0 top-0 bottom-0 w-1/2 border-l-2 border-b-2 border-gold/20 rounded-bl-3xl"></div>
+                                    </div>
+
+                                    <!-- Krok 3 — vlevo -->
+                                    <div class="flex items-center gap-5 py-4">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">3</span>
+                                        <strong class="text-white text-xl md:text-2xl">Prioritizovaný plán změn</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vpravo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute right-0 top-0 bottom-0 w-1/2 border-r-2 border-b-2 border-gold/20 rounded-br-3xl"></div>
+                                    </div>
+
+                                    <!-- Krok 4 — vpravo -->
+                                    <div class="flex items-center gap-5 py-4 flex-row-reverse">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">4</span>
+                                        <strong class="text-white text-xl md:text-2xl text-right">Stavba nebo optimalizace systémů</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vlevo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute left-0 top-0 bottom-0 w-1/2 border-l-2 border-b-2 border-gold/20 rounded-bl-3xl"></div>
+                                    </div>
+
+                                    <!-- Krok 5 — vlevo -->
+                                    <div class="flex items-center gap-5 py-4">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">5</span>
+                                        <strong class="text-white text-xl md:text-2xl">Průvodce při implementaci</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vpravo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute right-0 top-0 bottom-0 w-1/2 border-r-2 border-b-2 border-gold/20 rounded-br-3xl"></div>
+                                    </div>
+
+                                    <!-- Krok 6 — vpravo -->
+                                    <div class="flex items-center gap-5 py-4 flex-row-reverse">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/15 border-2 border-gold/50 flex items-center justify-center text-gold text-xl font-extrabold">6</span>
+                                        <strong class="text-white text-xl md:text-2xl text-right">Předání a vzdělávání týmu</strong>
+                                    </div>
+                                    <!-- Spojnice: ohyb vlevo -->
+                                    <div class="relative h-10">
+                                        <div class="absolute left-0 top-0 bottom-0 w-1/2 border-l-2 border-b-2 border-gold/20 rounded-bl-3xl"></div>
+                                    </div>
+
+                                    <!-- Poslední krok — uprostřed -->
+                                    <div class="flex items-center justify-center gap-5 py-4">
+                                        <span class="shrink-0 w-14 h-14 rounded-full bg-gold/20 border-2 border-gold/60 flex items-center justify-center text-gold text-xl font-extrabold">✦</span>
+                                        <strong class="text-white text-xl md:text-2xl">Průběžný monitoring a konzultace</strong>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
