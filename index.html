@@ -670,16 +670,25 @@
         <!-- Block B: Jak pracuji -->
         <section id="premium-program" class="py-16 lg:py-24 bg-[#0a0c12]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto">
+                <div class="max-w-6xl mx-auto">
                     <!-- Header -->
                     <div class="text-center mb-30 hidden">
                         <div
                             class="inline-block mb-4 px-4 py-1.5 border border-gold/40 rounded-full bg-gold/5 text-gold text-xs font-bold tracking-widest uppercase">
                             Přístup ke spolupráci</div>
                     </div>
-                    <!-- Main card -->
-                    <div
-                        class="bg-[#1a1c24] rounded-3xl border-2 border-gold/50 shadow-gold-glow relative overflow-hidden">
+                    <div class="grid md:grid-cols-[320px_1fr] gap-8 items-stretch">
+                        <!-- Photo -->
+                        <div
+                            class="relative rounded-3xl overflow-hidden order-1 h-64 sm:h-80 md:h-auto shadow-2xl border border-white/10">
+                            <img src="source/fotografie_spoluprace.webp" alt="Konzultace s klientem" draggable="false"
+                                loading="lazy" width="800" height="1067"
+                                class="w-full h-full object-cover select-none">
+                            <div class="absolute inset-0 cursor-default" oncontextmenu="return false;"></div>
+                        </div>
+                        <!-- Main card -->
+                        <div
+                            class="bg-[#1a1c24] rounded-3xl border-2 border-gold/50 shadow-gold-glow relative overflow-hidden order-2">
                         <!-- Decorative glows -->
                         <div
                             class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none">
@@ -797,6 +806,7 @@
                         <!-- CTA strip -->
                         <div class="p-8 md:p-10 relative z-10 text-center">
                             <a href="#balicky-sluzeb" class="btn-primary inline-block">CHCI VSTUPNÍ KONZULTACI ZDARMA</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -1191,18 +1201,27 @@
                         </div>
                         <h2 class="text-3xl font-bold mb-8 text-white relative z-10">
                             Kontaktní údaje</h2>
-                        <div class="space-y-6 text-gray-300 relative z-10">
-                            <div><strong class="block text-xl text-white mb-1">Ing.
-                                    Vojtěch Pícha</strong><span
-                                    class="block text-gold mb-1 font-medium text-m md:text-base">Ekonomický
-                                    & Marketingový konzultant pro firmy</span>
-                                <span class="text-m mb-1 text-white-500">E-mail:
-                                    <a href="mailto:taborsky.marketing@gmail.com"
-                                        class="hover:text-gold transition-colors">taborsky.marketing@gmail.com</a>
-                                </span>
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
+                            <div class="relative shrink-0 w-32 h-32 sm:w-36 sm:h-36 group">
+                                <img src="source/fotografie_kontakty.webp" alt="Vojtěch Pícha" draggable="false"
+                                    width="300" height="300"
+                                    class="w-full h-full object-cover rounded-full border-2 border-gold/40 shadow-lg select-none">
+                                <div class="absolute inset-0 rounded-full cursor-default" oncontextmenu="return false;">
+                                </div>
                             </div>
-                            <span class="text-m text-white-500">IČO:
-                                21165629</span>
+                            <div class="space-y-6 text-gray-300 text-center sm:text-left">
+                                <div><strong class="block text-xl text-white mb-1">Ing.
+                                        Vojtěch Pícha</strong><span
+                                        class="block text-gold mb-1 font-medium text-m md:text-base">Ekonomický
+                                        & Marketingový konzultant pro firmy</span>
+                                    <span class="text-m mb-1 text-white-500">E-mail:
+                                        <a href="mailto:taborsky.marketing@gmail.com"
+                                            class="hover:text-gold transition-colors">taborsky.marketing@gmail.com</a>
+                                    </span>
+                                </div>
+                                <span class="text-m text-white-500">IČO:
+                                    21165629</span>
+                            </div>
                         </div>
                         <div class="flex gap-4 py-4 border-gray-800">
                             <a href="mailto:taborsky.marketing@gmail.com"
