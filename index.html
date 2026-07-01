@@ -228,6 +228,12 @@
             background-image: linear-gradient(135deg, #d4af37 0%, #f5d76e 50%, #d4af37 100%);
             color: #0c0e16 !important;
         }
+
+        /* Active nav link */
+        nav a.nav-active {
+            color: #d4af37;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.5);
+        }
     </style>
 </head>
 
@@ -256,11 +262,11 @@
                 </div>
             </a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300"><a href="#proc-konzultace"
-                    class="text-gold hover:text-white transition-colors">Jak vám pomůžu</a><a href="#jak-to-probiha"
-                    class="hover:text-gold transition-colors">Co získáte</a><a href="#muj-pribeh"
-                    class="hover:text-gold transition-colors">O mně</a><a href="#cenik"
-                    class="hover:text-gold transition-colors">Ceník</a><a href="#kontakty"
-                    class="hover:text-gold transition-colors">Kontakt</a></nav>
+                    class="hover:text-gold transition-colors">Jak vám pomůžu</a><a href="#jak-to-probiha"
+                    class="hover:text-gold transition-colors">Co získáte</a><a href="#cenik"
+                    class="hover:text-gold transition-colors">Balíčky služeb</a><a href="#kontakty"
+                    class="hover:text-gold transition-colors">Kontakt</a><a href="#kurzy"
+                    class="hover:text-gold transition-colors">Manažerské vzdělávání</a></nav>
             <div class="flex items-center gap-1.5 md:gap-4"><a href="#vstupni-online-konzultace"
                     class="btn-primary !px-2.5 !py-2 !text-[9px] md:!px-6 md:!py-3 md:!text-sm shrink-0">Konzultace
                     ZDARMA</a>
@@ -1735,6 +1741,29 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        (function () {
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+            function onScroll() {
+                const scrollY = window.scrollY + 120;
+                let active = null;
+                navLinks.forEach(function (link) {
+                    const id = link.getAttribute('href').slice(1);
+                    const section = document.getElementById(id);
+                    if (section && !section.classList.contains('hidden') && section.offsetTop <= scrollY) {
+                        active = link;
+                    }
+                });
+                navLinks.forEach(function (l) { l.classList.remove('nav-active'); });
+                if (active) active.classList.add('nav-active');
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
     </script>
 </body>
 
